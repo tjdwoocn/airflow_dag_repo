@@ -4,7 +4,7 @@ from datetime import datetime
 from confluent_kafka import Producer
 
 def produce_message():
-    kafka_broker = '10.107.135.48:9092'  # Kafka 브로커 IP
+    kafka_broker = '10.98.139.82:9092'  # Kafka 브로커 IP
     producer = Producer({'bootstrap.servers': kafka_broker})
 
     def delivery_report(err, msg):
